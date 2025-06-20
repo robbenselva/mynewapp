@@ -5,7 +5,7 @@ files:
     destination: /home/ubuntu/my-web-app
 hooks:
   BeforeInstall:
-    - location: scripts/stop_server.sh
+    - location: /scripts/stop_server.sh
       timeout: 61
       runas: ubuntu
   AfterInstall:
