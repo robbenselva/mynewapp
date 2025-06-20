@@ -1,0 +1,18 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 14
+    commands:
+      - echo Installing source dependencies...
+      - cd src
+      - npm install
+  build:
+    commands:
+      - echo Build phase complete
+artifacts:
+  files:
+    - src/**/*         # Include app files
+    - appspec.yml
+    - scripts/*
